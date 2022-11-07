@@ -1,0 +1,656 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-size: 13px; */
+    font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: black;
+}
+
+.all{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 54px;
+    /* background-color: blueviolet; */
+    padding: 10px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo{
+    /* width: 50px;
+    height: 20px;  */
+    /* background-image: url(/img/microsoft-seeklogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    /*flex: 1;*/
+    /* background-color: chocolate;  */
+    /* position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.nav_logo img{
+    width: 120px;
+    height: 25px;
+    /* position: absolute;
+    top: 100px;
+    left: 25px;
+    transform: translate(-50%,-50%); */
+}
+
+.nav_middle{
+    /* width: 50%;
+    height: 100%; */
+    /* background-color: brown; */
+    flex:3;
+    display: flex;
+}
+
+.nav_right{
+    flex: 3;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: end;
+}
+
+.nav_middle li, .nav_right li{
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_middle a:hover, .nav_right a:hover{
+    text-decoration: 2px solid black;
+}
+
+.search img,.cart img,.user img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: rgb(224, 168, 179); */
+}
+
+.banner_top{
+    width: 100%;
+    height: 900px; 
+    /* background-image: url(/img/Highlight-Hero-Surface-Pro-8-with-TypeCover_VP4-1399x600.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner_top_text{
+    width: 30%;
+    height: 40%;
+    /* background-color: darkgrey; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.banner_top_text_title{
+    width: 100%;
+    height: 20%;
+    /* flex: 1; */
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner_top_text_content{
+    width: 100%;
+    height: 30%;
+    /* flex: 1; */
+    font-size: 24px;
+}
+
+.banner_top_text_btn{
+    width: 20%;
+    height: 15%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    /* text-align: center; */
+}
+
+@media (max-width:1083px) {
+
+.banner_top_text{
+    width: 100%;
+    height: 300px;
+    margin-top: 450px;
+    background-color: #fff;
+    margin-left: -80px;
+}
+.banner_top_text_title{
+    margin-bottom: unset;
+    width: 100%;
+    height: 100px;
+}
+.banner_top_text_content{
+    width: 100%;
+    height: 80px;
+}
+.banner_top_text_btn{
+    width: 15%;
+    height: 20%;
+}
+}
+
+.list_top{
+    width: 100%;
+    height: 200px;
+    /* background-color: aquamarine; */
+    /* padding: 80px 50px; */
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.list_top_microsoft365{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    /* flex:1; */
+    /* background-color: azure; */
+}
+
+.list_top_microsoft365_pic{
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.list_top_microsoft365_text{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0067b8;
+}
+
+.list_top_surface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    /* flex:1; */
+    /* background-color: rgb(60, 117, 117); */
+}
+
+.list_top_surface_pic{
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/list-top-2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.list_top_surface_text{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0067b8;
+}
+
+.list_top_windows11{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    /* flex:1; */
+    /* background-color: rgb(32, 77, 77); */
+}
+
+.list_top_windows11_pic{
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.list_top_windows11_text{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0067b8;
+}
+
+/* @media (max-width:1083px) {
+    .list_top{
+        position: absolute;
+        top: 850px;
+    }
+} */
+
+.list_middle{
+    width: 100%;
+    height: 500px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px 0 80px;
+    margin-bottom: 5%;
+}
+
+.listmidbox{
+    /* width: 500px;
+    height: 100%; */
+    flex: 1;
+    /* background-color: brown; */
+    margin:0 20px;
+}
+
+.listmidpic{
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(23, 49, 41); */
+}
+
+.list_middle_microsoft365_pic{
+    background-image: url(./img/list-middle-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_middle_surface_pic{
+    background-image: url(./img/list-middle-2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_middle_microsoftedge_pic{
+    background-image: url(./img/list-middle-3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_middle_pcgame_pic{
+    background-image: url(./img/list-middle-4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.listmidtitle{
+    width: 100%;
+    height: 80px;
+    /* background-color: burlywood; */
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.listmidcontent{
+    width: 100%;
+    height: 120px;
+    /* background-color: chocolate; */
+    font-size: 20px;
+}
+
+.listmidlink,.list_middle_microsoft365_link{
+    width: 100%;
+    height: 50px;
+    /* background-color: blueviolet; */
+    font-size: 20px;
+}
+
+.list_middle_microsoft365_link{
+    display: flex;
+}
+
+.listmidlink::after, .list_middle_microsoft365_link_1::after,.list_middle_microsoft365_link_2::after{
+    content: '>';
+}
+
+.list_middle_microsoft365_link_1{
+    margin-right: 30px;
+}
+
+.listmidlink:hover,.list_middle_microsoft365_link_1:hover,.list_middle_microsoft365_link_2:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:1083px) {
+    .list_middle{
+        height: 800px;
+        /* position: absolute; */
+        /* top: 1000px; */
+        border: red  5px solid;
+    }
+
+}
+
+.banner_down{
+    width: calc(100% - 200px);
+    height: 800px;
+    /* background-image: url(./img/gldn-Soft-Hero-OneDriveCampaignRefresh-2_VP4-1260x600.avif); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.banner_down_text{
+    width: 500px;
+    height: 260px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 400px;
+    left:100px;
+    transform: translateY(-50%);
+}
+
+.banner_down_text_title{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.banner_down_text_content{
+    width: 100%;
+    height: 100px;
+    /* background-color: brown; */
+    font-size: 25px;
+}
+
+.banner_down_text_btn{
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+@media (max-width:1083px) {
+    .banner_down{
+        position: absolute;
+        top: 2000px;
+    }
+}
+
+.list_down{
+    width: 100%;
+    height: 800px;
+    /* background-color: aquamarine; */
+    padding: 0 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 5%; */
+}
+
+.list_down_title{
+    width: calc(100% - 30px);
+    height: 100px;
+    /* background-color: blue; */
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.list_down_content{
+    flex: 1;
+    display: flex;
+}
+
+.listdwnbox{
+    margin-right: 30px;
+    flex: 1;
+    /* background-color: burlywood; */
+}
+
+.listdwnpic{
+    width: 100%;
+    height: 250px;
+    /* background-color: brown; */
+}
+
+.list_down_surface_pic{
+    background-image: url(./img/list-down-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_down_microsoftteams_pic{
+    background-image: url(./img/list-down-2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_down_microsoft365_pic{
+    background-image: url(./img/list-down-3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list_down_windows11_pic{
+    background-image: url(./img/list-down-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.listdwnspace{
+    width: 100%;
+    height: 80px;
+    /* background-color: beige; */
+    position: relative;
+}
+
+.list_down_surface_space_inside{
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+}
+
+.listdwntitle{
+    width: 100%;
+    height: 120px;
+    /* background-color: cadetblue; */
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.listdwntext{
+    width: 100%;
+    height: 150px;
+    /* background-color: darkolivegreen; */
+    font-size: 25px;
+}
+
+.listdwnlink{
+    width: 100%;
+    height: 100px;
+    /* background-color: darkgoldenrod; */
+    font-size: 25px;
+}
+
+.listdwnlink::after{
+    content: '>';
+    margin-left: 5px;
+}
+
+.listdwnlink:hover{
+    text-decoration: underline;
+}
+
+.follow_list{
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    padding: 0 80px 0 80px;
+}
+
+.follow_list_microsoft{
+    width: 200px;
+    height: 50px;
+    /* background-color: brown; */
+    margin-right: 10px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.follow_list_fb{
+    width: 50px;
+    height: 50px;
+    /* background-color: blueviolet; */
+    margin-right: 10px;
+    background-image: url(./img/fb.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.follow_list_ytb{
+    width: 50px;
+    height: 50px;
+    /* background-color: blueviolet; */
+    margin-right: 10px;
+    background-image: url(./img/yt.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back_to_top{
+    width: 160px;
+    height: 50px;
+    background-color: rgb(202, 199, 199);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 23px;
+    text-align: center;
+}
+.back_to_top::before{
+    content: '↑';
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+.footer{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(221, 214, 214);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer_top{
+    width: 100%;
+    height: 500px;
+    /* background-color: brown; */
+    display: flex;
+}
+
+.footer_down{
+    width: 100%;
+    height: 100px;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.footer_down_left{
+    flex: 1;
+    margin: auto;
+    margin-left: 50px;
+}
+.footer_down_right{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.footer_down_right > div{
+    margin: 15px;
+}
+
+.footertopbox{
+    width: 300px;
+    height: 100%;
+    /* background-color: aquamarine; */
+    margin-right: 10px;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.footertopbox > div{
+    margin-bottom: 10px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
